@@ -41,6 +41,14 @@ npm run dev
 
 The SPA is now running at `http://localhost:5173` (use `-- --port <port>` if occupied).
 
+### Docker
+
+```bash
+docker compose up -d
+```
+
+Starts both services. Frontend at `http://localhost:5175`, backend at `http://localhost:8000`.
+
 ### Environment Variables
 
 | Variable        | Required | Default                  | Description                                  |
@@ -180,19 +188,28 @@ Using `httpx.AsyncClient` with FastAPI's async handler avoids blocking the event
 
 ## Deployment
 
-### Backend (Render)
+### Backend (Render — Docker)
 
 1. Create a new **Web Service** on Render
-2. Set root directory to `backend`
-3. Build command: `pip install -r requirements.txt`
-4. Start command: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
-5. Add `FRONTEND_URL` env var set to your deployed frontend URL
+2. Connect your GitHub repo, branch `main`
+3. Set **Root Directory** to `backend`
+4. Render auto-detects the `Dockerfile` — no build command needed
+5. Start command: not needed (Dockerfile handles it)
+6. Add `FRONTEND_URL` env var set to your deployed frontend URL
 
 ### Frontend (Vercel)
 
 1. Import the `frontend/` directory as a new project on Vercel
 2. Set `VITE_API_URL` to your deployed Render backend URL
 3. Deploy — Vercel auto-detects Vite
+
+### Live URLs
+
+| Service | URL |
+|---------|-----|
+| Frontend | https://frontend-eight-gilt-78.vercel.app |
+| Backend API | https://page-pulse-digital-heroes-swo4.onrender.com |
+| API Docs | https://page-pulse-digital-heroes-swo4.onrender.com/docs |
 
 ---
 
