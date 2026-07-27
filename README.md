@@ -1,5 +1,7 @@
 # Page Pulse
 
+[![Loom Demo](https://cdn.loom.com/sessions/thumbnails/ba89aecde7fb48b29066c40ce0790e2c-0001.jpg)](https://www.loom.com/share/ba89aecde7fb48b29066c40ce0790e2c)
+
 A two-service web tool that audits any public URL and returns a structured content/SEO health report — HTTP status, response time, page title, meta description, heading hierarchy, image accessibility, link/paragraph counts, Open Graph metadata, and more.
 
 - **Frontend**: React (Vite) SPA with Tailwind CSS, Framer Motion animations, Lucide React icons — deployed to Vercel
