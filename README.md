@@ -6,7 +6,8 @@ A two-service web tool that audits any public URL and returns a structured conte
 
 - **Frontend**: React (Vite) SPA with Tailwind CSS, Framer Motion animations, Lucide React icons — deployed to Vercel
 - **Backend**: FastAPI + BeautifulSoup, deployed to Render
-- **Live demo**: [frontend-eight-gilt-78.vercel.app](https://frontend-eight-gilt-78.vercel.app)
+- **Live app**: [frontend-eight-gilt-78.vercel.app](https://frontend-eight-gilt-78.vercel.app)
+- **API**: [page-pulse-digital-heroes-swo4.onrender.com](https://page-pulse-digital-heroes-swo4.onrender.com/docs)
 
 ---
 
